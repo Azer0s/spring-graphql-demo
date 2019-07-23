@@ -1,0 +1,15 @@
+type Item {
+    id: ID!,
+    name: String!,
+    description: String
+}
+
+type User {
+    id: ID!,
+    username: String!,
+    items: [Item]
+}
+
+type Query {
+    users: [User]
+}
